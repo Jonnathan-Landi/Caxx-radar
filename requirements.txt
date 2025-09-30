@@ -1,0 +1,7 @@
+wradlib
+xarray
+numpy
+pyyaml
+pyproj
+scipy
+netCDF4

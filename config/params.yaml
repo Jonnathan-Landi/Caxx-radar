@@ -1,0 +1,20 @@
+radar:
+  name: CAXX_Paraguillas
+  lon: -79.00      # ACTUALIZAR con precisión
+  lat: -2.90       # ACTUALIZAR con precisión
+  alt_m: 4450.0    # msnm (confirmado por ti)
+
+projection:
+  epsg: 32717 # Proyección destino para productos rasterizados
+
+grid:
+  dx: 1000 # resolución en metros para el gridding cartesiano
+  dy: 1000 # resolución en metros para el gridding cartesiano
+  buffer_m: 150000   # extensión (buffer) alrededor del radar (m); ajustar según alcance del radar (100 km)
+
+io:
+  nodata: -9999.0   # Valor NoData para salidas raster
+
+export:
+  geotiff_compress: "deflate" # compresión por defecto en GeoTIFF
+  geotiff_dtype: "float32" # tipo de dato para GeoTIFF
